@@ -1,0 +1,200 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+  text-decoration: none;
+}
+
+body {
+  background-color: #111a2f;
+  margin: 0; /* Agar sahifa markaziga mos kelsa, boshlanish punktini o'chirib tashlang */
+  font-family: "Rubik", sans-serif; /* Font o'lchamini to'g'irlash */
+}
+
+.container {
+  padding: 10px 50px; /* Paddinglarni bitta qatorga joylashtirish */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* Elementlarni markaziy o'rnada joylashtirish */
+  gap: 20px; /* Elementlar orasidagi bosma, hozirgi brauzerlar tomonidan qo'llab-quvvatlanmaydi */
+}
+
+.logo {
+  height: 42px;
+  display: flex;
+  align-items: center;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+h6 {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.links {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.links > button {
+  padding: 10px 20px;
+  background-image: linear-gradient(90.35deg, #2563eb 0.36%, #d946ef 201.02%);
+  border: none;
+  border-radius: 5px;
+}
+
+.links > button:active {
+  opacity: 0.5;
+}
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.banners {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+}
+
+.banner-left > h2 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 58px;
+}
+
+.banner-left > div {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.banner-left > div > button {
+  background-image: linear-gradient(90.35deg, #2563eb 0.36%, #d946ef 201.02%);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 500px) {
+  .container {
+    width: 100%; /* To'g'ri o'lchamni sozlash */
+    padding: 10px; /* Paddingni o'lchami to'g'rilash */
+  }
+
+  .links {
+    display: none; /* Kichik ekranlar uchun havolalarni yashirish */
+  }
+
+  .logo {
+    margin: auto; /* Logoni markaziy o'rnada joylashtirish */
+  }
+
+  .header {
+    transform: scale(1.5); /* Header o'lchamini kattalashtirish */
+  }
+
+  .banners {
+    flex-direction: column; /* Bannerlarni vertikal tartibda joylash */
+    align-items: center; /* Bannerlarni markaziy o'rnada joylashtirish */
+  }
+
+  .banner-right > img {
+    width: 100%; /* Rasmni to'g'ri o'lchamda joylash */
+    max-width: 450px; /* Eng yuqori o'lchamni belgilash */
+  }
+
+  .banner-left > p,
+  .banner-left > div,
+  .banner1 {
+    text-align: center; /* Matn va elementlarni markaziy qilib joylashtirish */
+  }
+
+  .banner-left > h2,
+  .banner1 > h2,
+  .banner1 > p {
+    font-size: 30px; /* Matnning o'lchamini to'g'irlash */
+  }
+}
+
+/* Karta bo'limi boshlandi */
+.card-img {
+  height: 74px;
+  width: 74px;
+  border-radius: 50%;
+  padding: 20px;
+}
+
+.cards {
+  width: 370px;
+  height: 336px;
+  border-radius: 34px;
+  padding: 30px;
+  background: linear-gradient(
+    268.12deg,
+    rgba(254, 254, 255, 0.032) -11.04%,
+    rgba(255, 255, 255, 0.018) 104.89%
+  );
+  border: 1px solid;
+  border-image-source: linear-gradient(
+    97.12deg,
+    rgba(255, 255, 255, 0.08) -3.52%,
+    rgba(255, 255, 255, 0.07) 100.35%
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 20px;
+}
+
+.banner1 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: auto;
+}
+
+.banner1 > h2,
+.banner1 > p {
+  text-align: center;
+  max-width: 587px; /* Matnning eng yuqori o'lchamini chegaralash */
+  margin: auto;
+}
+
+.banner-left > h3 {
+  width: 582px; /* Ko'rsatma bo'yicha o'lchamni sozlash */
+  height: 110px;
+  font-family: "DM Sans", sans-serif;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 54.68px;
+  text-align: center;
+}
+
+.banner-left > small {
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: left;
+  width: 579px; /* Ko'rsatma bo'yicha o'lchamni sozlash */
+  height: 130px;
+}
