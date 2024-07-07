@@ -261,5 +261,5 @@ flex-direction: column;
   display: flex;
   flex-direction: column;
   height: 200px;
-  justify-content: space-between;
+  gap: 20px;
 }
