@@ -8,17 +8,17 @@
 
 body {
   background-color: #111a2f;
-  margin: 0; /* Agar sahifa markaziga mos kelsa, boshlanish punktini o'chirib tashlang */
-  font-family: "Rubik", sans-serif; /* Font o'lchamini to'g'irlash */
+  margin: auto;
+   font-family: "Rubik", sans-serif;
 }
 
 .container {
-  padding: 10px 50px; /* Paddinglarni bitta qatorga joylashtirish */
+  padding: 10px 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; /* Elementlarni markaziy o'rnada joylashtirish */
-  gap: 20px; /* Elementlar orasidagi bosma, hozirgi brauzerlar tomonidan qo'llab-quvvatlanmaydi */
+  align-items: center;
+  gap: 20px; 
 }
 
 .logo {
@@ -36,6 +36,7 @@ h6 {
   font-size: 20px;
   font-weight: 500;
   line-height: 24px;
+  text-align: center;
 }
 
 .links {
@@ -89,44 +90,52 @@ h6 {
 
 @media only screen and (max-width: 500px) {
   .container {
-    width: 100%; /* To'g'ri o'lchamni sozlash */
-    padding: 10px; /* Paddingni o'lchami to'g'rilash */
+    width: 100%; 
+    padding: 10px;
   }
 
   .links {
-    display: none; /* Kichik ekranlar uchun havolalarni yashirish */
+    display: none;
   }
 
   .logo {
-    margin: auto; /* Logoni markaziy o'rnada joylashtirish */
+    margin: auto; 
   }
 
   .header {
-    transform: scale(1.5); /* Header o'lchamini kattalashtirish */
+    transform: scale(1.5);
   }
 
   .banners {
-    flex-direction: column; /* Bannerlarni vertikal tartibda joylash */
-    align-items: center; /* Bannerlarni markaziy o'rnada joylashtirish */
+    flex-direction: column; 
+    align-items: center; 
   }
 
   .banner-right > img {
-    width: 100%; /* Rasmni to'g'ri o'lchamda joylash */
-    max-width: 450px; /* Eng yuqori o'lchamni belgilash */
+    width: 100%; 
+    max-width: 450px; 
   }
 
   .banner-left > p,
   .banner-left > div,
   .banner1 {
-    text-align: center; /* Matn va elementlarni markaziy qilib joylashtirish */
+    text-align: center
   }
 
   .banner-left > h2,
   .banner1 > h2,
   .banner1 > p {
-    font-size: 30px; /* Matnning o'lchamini to'g'irlash */
+    font-size: 30px; 
   }
-}
+   .banner1 > h3,
+  .banner1 > small {
+    font-size: 30px; }
+    .card-class{
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+  }
 
 /* Karta bo'limi boshlandi */
 .card-img {
@@ -175,12 +184,12 @@ h6 {
 .banner1 > h2,
 .banner1 > p {
   text-align: center;
-  max-width: 587px; /* Matnning eng yuqori o'lchamini chegaralash */
+  max-width: 587px; 
   margin: auto;
 }
 
 .banner-left > h3 {
-  width: 582px; /* Ko'rsatma bo'yicha o'lchamni sozlash */
+  width: 582px; 
   height: 110px;
   font-family: "DM Sans", sans-serif;
   font-size: 42px;
@@ -195,6 +204,62 @@ h6 {
   font-weight: 400;
   line-height: 26px;
   text-align: left;
-  width: 579px; /* Ko'rsatma bo'yicha o'lchamni sozlash */
+  width: 579px; 
   height: 130px;
+}
+.section4{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.section4 > div{
+  text-align: center;
+}
+.card-class{
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.cards2{
+  width: 270px;
+height: 266px;
+border-radius: 34px;
+border: 1px;
+background: linear-gradient(268.12deg, rgba(254, 254, 255, 0.032) -11.04%, rgba(255, 255, 255, 0.018) 104.89%);
+border: 1px solid;
+border-image-source: linear-gradient(97.12deg, rgba(255, 255, 255, 0.08) -3.52%, rgba(255, 255, 255, 0.07) 100.35%);
+box-shadow: 0px 22px 18px 0px #0000000D;
+/* display: flex; */
+flex-direction: column;
+}
+/* .cards2 > img {
+  width: 121px;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+} */
+.footer{
+  padding: 10px 50px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.footer1{
+  display: flex;
+  height: 175px;
+  flex-direction: column;
+  gap: 10px;
+}
+.footer1> img{
+  width: 174px;
+}
+.footer2{
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  justify-content: space-between;
 }
