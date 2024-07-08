@@ -129,8 +129,11 @@ h6 {
   }
    .banner1 > h3,
   .banner1 > small {
-    font-size: 30px; }
-    .card-class{
+    font-size: 30px; 
+
+  }
+  
+  .card-class{
       display: flex;
       flex-wrap: wrap;
     }
@@ -245,7 +248,7 @@ flex-direction: column;
   padding: 10px 50px;
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  gap: 150px;
   flex-wrap: wrap;
 }
 .footer1{
@@ -261,5 +264,5 @@ flex-direction: column;
   display: flex;
   flex-direction: column;
   height: 200px;
-  gap: 20px;
+  justify-content: space-between;
 }
